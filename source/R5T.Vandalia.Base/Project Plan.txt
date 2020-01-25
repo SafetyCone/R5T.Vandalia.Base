@@ -1,4 +1,11 @@
 R5T.Vandalia.Base - An IValueEqualityComparer<T> service definition base library for the Vandalia project.
 
-Goals
 
+# Prior Work
+
+Based on: https://github.com/MinexAutomation/Minex/blob/master/Source/Rhodochrosite/Libraries/Common.NetStandard.Lib/Common.NetStandard.Lib/Code/Interfaces/IValueEqualityComparer.cs
+
+
+# Goals
+
+Create an interface defining a service that will compare two values. Basically System.Collections.Generic.IEqualityComparer<T>, but without the requirement to implement GetHashCode().
