@@ -1,5 +1,7 @@
 ﻿using System;
 
+using R5T.T0064;
+
 
 namespace R5T.Vandalia
 {
@@ -7,7 +9,8 @@ namespace R5T.Vandalia
     /// Allows comparing the equality of objects.
     /// Basically, this is <see cref="System.Collections.Generic.IEqualityComparer{T}"/> without the requirement to implement GetHashCode().
     /// </summary>
-    public interface IValueEqualityComparer<T>
+    [ServiceDefinitionMarker]
+    public interface IValueEqualityComparer<T> : IServiceDefinition
     {
         bool Equals(T x, T y);
     }
